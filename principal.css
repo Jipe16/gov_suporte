@@ -1,0 +1,396 @@
+@charset "utf-8";
+/* CSS Document */
+
+html * {
+  font-family: Helvetica !important;
+}
+
+body {
+  background-color: rgb(245, 243, 243);
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+}
+label,
+select,
+button {
+  cursor: pointer;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    rgb(24, 199, 223) 0%,
+    rgba(24, 200, 224, 1) 100%
+  );
+  overflow-x: hidden;
+  padding-top: 15px;
+}
+
+.logosidebar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+  width: 80%;
+}
+
+.iconsidebar {
+  vertical-align: bottom;
+  height: 30px;
+  width: 30px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav x {
+  margin-left: 37px;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  background-color: #0e7583;
+  color: #f1f1f1;
+}
+
+.pgatual {
+  background: rgba(14, 117, 131, 0.4);
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.conteudo {
+  margin-left: 250px;
+  padding: 1px 16px;
+}
+
+topo {
+  font-size: 25px;
+}
+
+/*Inicio*/
+
+.inicio {
+  border: solid 2px;
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  background: radial-gradient(
+    circle,
+    rgb(24, 199, 223) 70%,
+    rgba(24, 200, 224, 1) 100%
+  );
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 45px;
+  width: 25%;
+}
+
+.inicio a {
+  margin-bottom: 16px;
+  padding: 8px;
+  background-color: white;
+  border-radius: 50px;
+}
+
+.userimg {
+  margin-bottom: 16px;
+  border: solid 2px;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/*Criação de Chamados*/
+
+.criacaochamado {
+  background-color: white;
+  border-radius: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.criacaochamado div {
+  margin-bottom: 20px;
+}
+
+.dv-relacao h6{
+  margin: 1px;
+}
+
+.dv-titulo {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dv-titulo input {
+  width: 50%;
+  height: 20px;
+}
+
+.env-chamado {
+  background-color: #0e7583;
+  color: white;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  border-style: none;
+  border-radius: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.env-chamado:hover {
+  background-color: rgba(24, 200, 224, 1);
+  color: black;
+}
+
+.dv-envio {
+  justify-content: center;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+}
+
+#lista {
+  width: 250px;
+  height: 100px;
+  overflow: auto;
+}
+
+.anexo {
+  background-color: #0e7583;
+  line-height: 40px;
+  color: white;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.anexo:hover {
+  background-color: rgba(24, 200, 224, 1);
+  color: black;
+}
+
+.env-arquivo {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/*Chamados*/
+
+table,
+tr,
+th {
+  border: solid 1px;
+}
+
+.tb-cabeca {
+  background-color: white;
+}
+
+.tb-corpo tr:nth-child(even) {
+  background-color: white;
+}
+
+.tb-corpo tr:nth-child(odd) {
+  background-color: lightgray;
+}
+
+.tb-chamados {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.tb-id {
+  width: 50px;
+}
+
+.tb-prioridade {
+  width: 150px;
+}
+
+.tb-data {
+  width: 150px;
+}
+
+.tb-status {
+  width: 60px;
+}
+
+.tb-detalhes {
+  width: 100px;
+}
+
+.abr-chamado {
+  border: none;
+  background-color: #0e7583;
+  color: white;
+  border-radius: px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.abr-chamado:hover {
+  background-color: rgba(24, 200, 224, 1);
+  color: black;
+}
+
+/*FAQ*/
+
+.clp-faq {
+  margin-top: 50px;
+}
+
+.clp {
+  width: 100%;
+  cursor: pointer;
+  padding: 18px;
+  border-style: none;
+  background: white;
+  text-align: left;
+  font-size: 25px;
+  transition: 0.3s;
+}
+
+.active,
+.clp:hover {
+  background: #0e7583;
+  color: white;
+}
+
+.clp:after {
+  content: "\002B";
+  font-size: 25px;
+  float: right;
+}
+
+.active:after {
+  color: white;
+  content: "\2212";
+}
+
+.clp-resposta {
+  max-height: 0;
+  padding: 0px 18px;
+  overflow: hidden;
+  background-color: white;
+  transition: max-height 0.3s ease-out;
+}
+
+/*Chamado*/
+
+.grid-titulo {
+  grid-area: titulo;
+}
+.grid-setor {
+  grid-area: setor;
+}
+.grid-prioridade {
+  grid-area: prioridade;
+}
+.grid-relacao {
+  grid-area: relacao;
+}
+.grid-catergoria {
+  grid-area: categoria;
+}
+.grid-usuario {
+  grid-area: user;
+}
+.grid-contato {
+  grid-area: contato;
+}
+.grid-data {
+  grid-area: data;
+}
+.grid-status {
+  grid-area: status;
+}
+.grid-descricao {
+  grid-area: desc;
+}
+
+.dv-voltar {
+  margin-top: 25px;
+}
+
+.voltar {
+  border: none;
+  background-color: #0e7583;
+  color: white;
+  border-radius: 50px;
+  font-size: 20px;
+  padding: 8px;
+  transition: 0.3s;
+}
+
+#fechar {
+  float: right;
+}
+
+.voltar:hover {
+  background-color: rgba(24, 200, 224, 1);
+  color: black;
+}
+
+.grid-chamado {
+  margin-top: 50px;
+  display: grid;
+  grid-template-areas:
+    "titulo titulo"
+    "prioridade prioridade"
+    "relacao relacao"
+    "setor status"
+    "data categoria"
+    "user contato"
+    "desc desc";
+  gap: 2px;
+  background-color: black;
+  padding: 2px;
+}
+
+.grid-chamado > div {
+  min-width: 0;
+  background-color: white;
+  text-align: center;
+  padding: 8px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="principal.css" />
+  <head>
+    <meta charset="utf-8" />
+    <title>GovSuporte - dv-chamado</title>
+    <link rel="icon" type="image/x-icon" href="/icons/favicon.ico" />
+  </head>
+
+  <div id="mySidenav" class="sidenav">
+    <img src="Icons/Logo.png" alt="Logo" class="logosidebar" />
+
+    <a href="inicio.html"
+      ><img src="Icons/home.png" alt="Inicio" class="iconsidebar" /> Inicio</a
+    >
+
+    <a href="criarchamado.html"
+      ><img src="Icons/add.png" alt="Criar" class="iconsidebar" /> Criar
+      Chamado</a
+    >
+
+    <a href="chamados.html">
+      <img src="Icons/perigo.png" alt="Chamados" class="iconsidebar" />
+      Chamados</a
+    >
+
+    <a href="faq.html"
+      ><img src="Icons/pergunta.png" alt="FAQ" class="iconsidebar" /> FAQ</a
+    >
+
+    <a href="index.html"
+      ><img src="Icons/sair.png" alt="Sair" class="iconsidebar" /> Sair</a
+    >
+  </div>
+  <body>
+    <div class="conteudo">
+      <topo>Chamado</topo>
+      <!--TODO:-->
+      <div class="grid-chamado">
+        <div class="grid-titulo">(Titulo)</div>
+
+        <div class="grid-setor">
+          Setor: <br />
+          (Setor)
+        </div>
+
+        <div class="grid-categoria">
+          Categoria:<br />
+          (Categoria)
+        </div>
+
+        <div class="grid-prioridade">
+          Prioridade:<br />
+          (Prioridade)
+        </div>
+
+        <div class="grid-relacao">
+          Relacionado com o chamado: <br />
+          (Relação)
+        </div>
+
+        <div class="grid-usuario">
+          Criado por:<br />
+          (Nome do usuário)
+        </div>
+
+        <div class="grid-contato">
+          Contato: <br />
+          (Forma de contato)
+        </div>
+
+        <div class="grid-data">
+          Data de Criação: <br />
+          DD/MM/YYYY
+        </div>
+
+        <div class="grid-status">
+          Status: <br />
+          (Status)
+        </div>
+
+        <div class="grid-descricao">
+          (Descrição)
+        </div>
+      </div>
+      <div class="dv-voltar">
+        <button class="voltar" onclick="location.href='chamados.html'">
+          &larr; Voltar
+        </button>
+        <button class="voltar" id="fechar" onclick="return confirm('Tem certeza ?')">Fechar o Chamado</button>
+      </div>
+    </div>
+  </body>
+</html>
